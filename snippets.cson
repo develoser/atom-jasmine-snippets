@@ -1,0 +1,44 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+'.source.js':
+  'jasmine.it':
+    'prefix': 'it'
+    'body': 'it(\'$1\', function ($2) {$3});'
+  'jasmine.beforeAll':
+    'prefix': 'bfa'
+    'body': 'beforeAll(function ($1) {$2});'
+  'jasmine.beforeEach':
+    'prefix': 'bfe'
+    'body': 'beforeEach(function ($1) {$2});'
+  'jasmine.afterAll':
+    'prefix': 'afa'
+    'body': 'afterAll(function ($1) {$2});'
+  'jasmine.afterEach':
+    'prefix': 'afe'
+    'body': 'afterEach(function ($1) {$2});'
+  'jasmine.expect':
+    'prefix': 'exp'
+    'body': 'expect($1).to$2;'
+  'jasmine.describe':
+    'prefix': 'desc'
+    'body': 'describe(\'$1\', function ($2) {$3});'
